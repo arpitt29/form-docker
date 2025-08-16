@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <p>Hi, welcome to the To-Do Page</p>
+
+    <div class="centred">
+        <form action="/submittodoitem" method="POST"> 
+            <label for="Item name">Item Name</label><br>
+            <input type="text" name="Item name" id="Item name" placeholder="Enter your Item name"><br><br>
+
+            <label for="Item Description">Item Description</label><br>
+            <input type="Item Description" name="Item Description" id="Item Description" placeholder="Enter your Item Description"><br><br>
+
+
+            <button type="submit">Submit</button>
+        </form>
+        <a href="get_data"> <button type="Viewdata">Viewdata</button></a>
+    </div>
+
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        p {
+            text-align: center;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: yellow;
+        }
+
+        .centred {
+            margin: auto;
+            width: 50%;
+            border: 3px solid red; /* ✅ Added 'solid' to border style */
+            padding: 10px;
+            background-color: white; /* Optional: makes form stand out */
+        } 
+    </style>
+</body>
+</html>
