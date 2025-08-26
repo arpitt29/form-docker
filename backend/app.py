@@ -6,7 +6,7 @@ data_store = []
 
 @app.route("/", methods=["GET"])
 def home():
-    return "I love you Aditi Pathak"
+    return "Welcome to the Flask API!"
 
 @app.route("/submit", methods=["POST"])
 def submit():
