@@ -4,6 +4,10 @@ app = Flask(__name__)
 
 data_store = []
 
+@app.route("/", methods=["GET"])
+def home():
+    return "Welcome to the Flask API!"
+
 @app.route("/submit", methods=["POST"])
 def submit():
     data = request.get_json()
